@@ -7,5 +7,4 @@ from ProjectIndividuel.communitymanager.models import Communaute
 
 def communautes(request):
     commus = Communaute.object.all()
-    return render(request, 'communautes.html', {'communautes':
-commus}c)
+    return render(request, 'communautes.html', locals())
